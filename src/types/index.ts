@@ -63,7 +63,7 @@ export interface GameElementsScores {
 }
 
 export interface FormalGameDesign {
-  design_paradigm: "Paradigm I" | "Paradigm II" | "Paradigm III" | "Unspecified";
+  design_paradigm: "Paradigm I" | "Paradigm II" | "Paradigm III" | "Unspecified" | "Other";
   report: GameElementsScores; // 维度一：报告完整度
   depth: GameElementsScores;  // 维度二：设计深度
 }

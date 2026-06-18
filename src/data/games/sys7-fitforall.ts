@@ -1,4 +1,4 @@
-import { MCIGameArtifact } from './structure';
+import { MCIGameArtifact } from '@/types';
 
 export const fitForAllArtifact: MCIGameArtifact = {
     basic_info: {
