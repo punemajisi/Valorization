@@ -28,7 +28,7 @@ export function GameCard({ game }: { game: MCIGameArtifact }) {
       <div className="h-40 bg-gradient-to-br from-slate-100 to-slate-200 w-full relative overflow-hidden flex items-center justify-center">
         {basic_info.media_documentation?.screenshots?.[0] ? (
           <img
-            src={basic_info.media_documentation.screenshots[0]}
+            src={`/mci-games${basic_info.media_documentation.screenshots[0]}`}
             alt={basic_info.game_name}
             className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           />

@@ -92,7 +92,7 @@ export function GameDetailsModal({ game, onClose }: GameDetailsModalProps) {
                     {basic_info.media_documentation.screenshots.map((src, idx) => (
                       <div key={idx} className="relative aspect-video bg-slate-100 rounded-lg overflow-hidden border border-slate-200 group cursor-pointer shadow-sm hover:shadow-md transition-all">
                         <img
-                          src={src}
+                          src={`/mci-games${src}`}
                           alt={`Screenshot ${idx + 1}`}
                           className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                           onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
